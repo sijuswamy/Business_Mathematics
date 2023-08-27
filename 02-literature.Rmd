@@ -1,0 +1,137 @@
+# Set Theory & Operations
+
+-----
+
+Set theory & Operations: Introduction, Definition, elements and types of sets, operations on sets, De-Morgan’s Law and Cartesian product of two sets. Definition of a vector, Types of Vectors, Addition and subtraction of vectors, Multiplication of a vector by a scalar, Product of two vectors.
+
+-----
+
+## Introduction of set theory
+
+Set theory, branch of mathematics that deals with the properties of well-defined collections of objects, which may or may not be of a mathematical nature, such as numbers or functions. The theory is less valuable in direct application to ordinary experience than as a basis for precise and adaptable terminology for the definition of complex and sophisticated mathematical concepts.
+
+Between the years 1874 and 1897, the German mathematician and logician Georg Cantor created a theory of abstract sets of entities and made it into a mathematical discipline. This theory grew out of his investigations of some concrete problems regarding certain types of infinite sets of real numbers. A set, wrote Cantor, is a collection of definite, distinguishable objects of perception or thought conceived as a whole. The objects are called elements or members of the set.
+
+The theory had the revolutionary aspect of treating infinite sets as mathematical objects that are on an equal footing with those that can be constructed in a finite number of steps. Since antiquity, a majority of mathematicians had carefully avoided the introduction into their arguments of the actual infinite (i.e., of sets containing an infinity of objects conceived as existing simultaneously, at least in thought). Since this attitude persisted until almost the end of the 19th century, Cantor’s work was the subject of much criticism to the effect that it dealt with fictions—indeed, that it encroached on the domain of philosophers and violated the principles of religion. Once applications to analysis began to be found, however, attitudes began to change, and by the 1890s Cantor’s ideas and results were gaining acceptance. By 1900, set theory was recognized as a distinct branch of mathematics.
+
+At just that time, however, several contradictions in so-called naive set theory were discovered. In order to eliminate such problems, an axiomatic basis was developed for the theory of sets analogous to that developed for elementary geometry. The degree of success that has been achieved in this development, as well as the present stature of set theory, has been well expressed in the Nicolas Bourbaki Éléments de mathématique (begun 1939; “Elements of Mathematics”): “Nowadays it is known to be possible, logically speaking, to derive practically the whole of known mathematics from a single source, The Theory of Sets.”
+
+## Definitions
+
+
+::: {.definition #set name="Set"}
+A set is a well defined collection or class of objects
+:::
+
+Sets can be related to many real-life examples, such as the number of rivers in India, number of colours in a rainbow, etc.The following are the simple examples of sets as per definition \@ref(def:set).
+
+1. The numbers 1,2,3.
+
+2. The planets in the universe.
+
+3. The vowels in english alphabets.
+
+4. The set of all students in the IMBA class.
+
+5. The set of countries in the world.
+
+::: {.example #ex1 name="Practical example"}
+
+To understand sets, consider a practical scenario. While going to school from home, Nivy decided to note down the names of restaurants which come in between. The list of the restaurants, in the order they came, was:
+
+$$ \begin{array}{l} List\ 1: R_A ~~~~~       R_B ~~~~~       R_C ~~~~~       R_D ~~~~~       R_E \end{array}$$
+
+ 
+The above-mentioned list is a collection of objects. Also, it is well-defined. By well-defined, it is meant that anyone should be able to tell whether the object belongs to the particular collection or not. E. g. a stationary shop can’t come in the category of the restaurants. If the collection of objects is well-defined, it is known as a set.
+
+The objects in a set are referred to as *elements of the set*. A set can have finite or infinite elements. While coming back from the school, Nivy wanted to confirm the list what she had made earlier. This time again, she wrote the list in the order in which restaurants came. The new list was:
+
+$$ \begin{array}{l}List\ 2: R_E ~~~~~        R_D~~~~~        R_C ~~~~~       R_B  ~~~~~      R_A \end{array}$$
+
+ 
+Now, this is a different list. But is a different set? The answer is no. The order of elements has no significance in sets so it is still the same set.
+
+:::
+
+## Representation of Sets
+
+Sets can be represented in two ways:
+
+1. Roster Form or Tabular form
+
+2. Set Builder Form
+
+### Roster Form
+
+In roster form, all the elements of the set are listed, separated by commas and enclosed between curly braces { }. For example, the elements of the set $V$ of all vowels in the English alphabet can be represented as $V=\{a,e,i,o,u\}$. 
+
+Sometimes, it is not possible to list all the elements, but after knowing a few elements we can see as to what the other elements are. For example, the set of natural numbers may be written as: $N=\{1,2,3,\cdots ,\}$. Here the dots indicate that the set contains all the natural numbers. Similarly, the set of squares of positive odd integers is written as: $S=\{1,9,25,\cdots ,\}$.
+
+:::{.example#ex2 name="Leap year set"}
+
+If set represents all the leap years (the years that can be devided by 4) between the year 1995 and 2015, then it would be described using Roster form as:
+
+$A =\{1996,2000,2004,2008,2012\}$.
+
+Now, the elements inside the braces are written in ascending order. This could be descending order or any random order. As discussed before, the order doesn’t matter for a set represented in the Roster Form. 
+
+:::
+
+
+### Set Builder Form
+
+This method is also known as *set section* or *property rule*. In set builder form, all the elements have a common property. This property is not applicable to the objects that do not belong to the set. In this method the elements of the set are represented by mentioning their qualitative or quantitative or both characteristics.
+
+To understand this method, let us consider the sets:
+
+1. $A=\{2,4,6,8,\cdots ,\}$
+
+2. $B=\{a,e,i,o,u\}$
+
+If we try to search out some property among the elements of sets, $A$ and $B$, we find that all elements of set $A$ are even integers; all elements of set $B$ are the vowels of engish alphabet. Thus, we can use the letter 'x' to represent an arbitrary element of the set together with the property of 'x'. Therefore sets $A$ and $B$ may be written as:
+
+1. $A=\{2,4,6,8,\cdots,\}=\{x:x~ \text{is an even positive integer}\}$
+
+2. $B=\{a,e,i,o,u\}=\{x: x~ \text{is a vowel in english alphabet}\}$
+
+where the symbol `:` stands for *such that*.
+
+:::{.example#ex3 name="Prime number set"}
+If set $S$ has all the elements which are even prime numbers, it is represented as:
+
+$S=\{ x: x~\text{ is an even prime number}\}$
+:::
+
+
+## Types of sets
+
+The sets are further categorized into different types, based on elements or types of elements. These different types of sets in basic set theory are:
+
+1. **Finite set:** A set is said to be finite, if it contains finite number of distinct elements. Examples of finite set:
+i. $A=\{1,2,3,4,5\}$
+ii. $B=\{x:x~\text{is a river in india}\}$
+
+2. **Infinite set:** A set which contains infinite number of elements is known as infinite set. Examples:
+- $N=\{1,2,3,4,\cdots, \}$
+- $
+
+3. **Empty set or null set:** A set which contains no element is called an empty set or null set. This set is denoted by the Greek letter $\phi$. For example,
+a. $\phi=$ set of all those $x$ which are not equal to itself.
+
+b. Set of all integers whose square is 5.
+
+>*non-empty set:* A set which is not a null set is called non-empty set.
+
+4. **Singleton set:** A set which contains only one element is called a singleton set. For example.
+
+a. $A=\{x: 4<x<5, x~\text{is an integer}\}$
+
+b. $N=\{5\}$
+
+c. Set of all those negative integrers whose square is 9.
+
+5. Equal set: Two sets are equal if they have same elements
+6. Equivalent set: Two sets are equivalent if they have same number of elements
+7. Power set: A set of every possible subset.
+8. Universal set: Any set that contains all the sets under consideration.
+9. Subset: When all the elements of set A belong to set B, then A is subset of B

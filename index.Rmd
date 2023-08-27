@@ -1,0 +1,33 @@
+--- 
+title: "Business Mathematics"
+author: "Siju Swamy"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a digital version of the Course Material written for integrated MBA students in Saintgits Institute of Management, Kottayam. This book is generated and bublished using bookdown::gitbook."
+---
+
+# Prerequisites
+
+To study this course, a basic understanding of Class 10 mathematics is sufficient.
+
+
+
+```{r eval=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

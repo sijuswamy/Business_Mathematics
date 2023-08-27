@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 3 Set Theory &amp; Operations | Business Mathematics</title>
+<meta name="author" content="Siju Swamy">
+<meta name="description" content="Set theory &amp; Operations: Introduction, Definition, elements and types of sets, operations on sets, De-Morgan’s Law and Cartesian product of two sets. Definition of a vector, Types of Vectors,...">
+<meta name="generator" content="bookdown 0.35 with bs4_book()">
+<meta property="og:title" content="Chapter 3 Set Theory &amp; Operations | Business Mathematics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Set theory &amp; Operations: Introduction, Definition, elements and types of sets, operations on sets, De-Morgan’s Law and Cartesian product of two sets. Definition of a vector, Types of Vectors,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 3 Set Theory &amp; Operations | Business Mathematics">
+<meta name="twitter:description" content="Set theory &amp; Operations: Introduction, Definition, elements and types of sets, operations on sets, De-Morgan’s Law and Cartesian product of two sets. Definition of a vector, Types of Vectors,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Business Mathematics</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Prerequisites</a></li>
+<li><a class="" href="intro.html"><span class="header-section-number">2</span> Introduction</a></li>
+<li><a class="active" href="set-theory-operations.html"><span class="header-section-number">3</span> Set Theory &amp; Operations</a></li>
+<li><a class="" href="methods.html"><span class="header-section-number">4</span> Methods</a></li>
+<li><a class="" href="applications.html"><span class="header-section-number">5</span> Applications</a></li>
+<li><a class="" href="final-words.html"><span class="header-section-number">6</span> Final Words</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="set-theory-operations" class="section level1" number="3">
+<h1>
+<span class="header-section-number">3</span> Set Theory &amp; Operations<a class="anchor" aria-label="anchor" href="#set-theory-operations"><i class="fas fa-link"></i></a>
+</h1>
+<hr>
+<p>Set theory &amp; Operations: Introduction, Definition, elements and types of sets, operations on sets, De-Morgan’s Law and Cartesian product of two sets. Definition of a vector, Types of Vectors, Addition and subtraction of vectors, Multiplication of a vector by a scalar, Product of two vectors.</p>
+<hr>
+<div id="introduction-of-set-theory" class="section level2" number="3.1">
+<h2>
+<span class="header-section-number">3.1</span> Introduction of set theory<a class="anchor" aria-label="anchor" href="#introduction-of-set-theory"><i class="fas fa-link"></i></a>
+</h2>
+<p>Set theory, branch of mathematics that deals with the properties of well-defined collections of objects, which may or may not be of a mathematical nature, such as numbers or functions. The theory is less valuable in direct application to ordinary experience than as a basis for precise and adaptable terminology for the definition of complex and sophisticated mathematical concepts.</p>
+<p>Between the years 1874 and 1897, the German mathematician and logician Georg Cantor created a theory of abstract sets of entities and made it into a mathematical discipline. This theory grew out of his investigations of some concrete problems regarding certain types of infinite sets of real numbers. A set, wrote Cantor, is a collection of definite, distinguishable objects of perception or thought conceived as a whole. The objects are called elements or members of the set.</p>
+<p>The theory had the revolutionary aspect of treating infinite sets as mathematical objects that are on an equal footing with those that can be constructed in a finite number of steps. Since antiquity, a majority of mathematicians had carefully avoided the introduction into their arguments of the actual infinite (i.e., of sets containing an infinity of objects conceived as existing simultaneously, at least in thought). Since this attitude persisted until almost the end of the 19th century, Cantor’s work was the subject of much criticism to the effect that it dealt with fictions—indeed, that it encroached on the domain of philosophers and violated the principles of religion. Once applications to analysis began to be found, however, attitudes began to change, and by the 1890s Cantor’s ideas and results were gaining acceptance. By 1900, set theory was recognized as a distinct branch of mathematics.</p>
+<p>At just that time, however, several contradictions in so-called naive set theory were discovered. In order to eliminate such problems, an axiomatic basis was developed for the theory of sets analogous to that developed for elementary geometry. The degree of success that has been achieved in this development, as well as the present stature of set theory, has been well expressed in the Nicolas Bourbaki Éléments de mathématique (begun 1939; “Elements of Mathematics”): “Nowadays it is known to be possible, logically speaking, to derive practically the whole of known mathematics from a single source, The Theory of Sets.”</p>
+</div>
+<div id="definitions" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Definitions<a class="anchor" aria-label="anchor" href="#definitions"><i class="fas fa-link"></i></a>
+</h2>
+<div class="definition">
+<p><span id="def:set" class="definition"><strong>Definition 3.1  (Set) </strong></span>A set is a well defined collection or class of objects</p>
+</div>
+<p>Sets can be related to many real-life examples, such as the number of rivers in India, number of colours in a rainbow, etc.The following are the simple examples of sets as per definition <a href="set-theory-operations.html#def:set">3.1</a>.</p>
+<ol style="list-style-type: decimal">
+<li><p>The numbers 1,2,3.</p></li>
+<li><p>The planets in the universe.</p></li>
+<li><p>The vowels in english alphabets.</p></li>
+<li><p>The set of all students in the IMBA class.</p></li>
+<li><p>The set of countries in the world.</p></li>
+</ol>
+<div class="example">
+<p><span id="exm:ex1" class="example"><strong>Example 3.1  (Practical example) </strong></span>To understand sets, consider a practical scenario. While going to school from home, Nivy decided to note down the names of restaurants which come in between. The list of the restaurants, in the order they came, was:</p>
+<p><span class="math display">\[ \begin{array}{l} List\ 1: R_A ~~~~~       R_B ~~~~~       R_C ~~~~~       R_D ~~~~~       R_E \end{array}\]</span></p>
+<p>The above-mentioned list is a collection of objects. Also, it is well-defined. By well-defined, it is meant that anyone should be able to tell whether the object belongs to the particular collection or not. E. g. a stationary shop can’t come in the category of the restaurants. If the collection of objects is well-defined, it is known as a set.</p>
+<p>The objects in a set are referred to as <em>elements of the set</em>. A set can have finite or infinite elements. While coming back from the school, Nivy wanted to confirm the list what she had made earlier. This time again, she wrote the list in the order in which restaurants came. The new list was:</p>
+<p><span class="math display">\[ \begin{array}{l}List\ 2: R_E ~~~~~        R_D~~~~~        R_C ~~~~~       R_B  ~~~~~      R_A \end{array}\]</span></p>
+<p>Now, this is a different list. But is a different set? The answer is no. The order of elements has no significance in sets so it is still the same set.</p>
+</div>
+</div>
+<div id="representation-of-sets" class="section level2" number="3.3">
+<h2>
+<span class="header-section-number">3.3</span> Representation of Sets<a class="anchor" aria-label="anchor" href="#representation-of-sets"><i class="fas fa-link"></i></a>
+</h2>
+<p>Sets can be represented in two ways:</p>
+<ol style="list-style-type: decimal">
+<li><p>Roster Form or Tabular form</p></li>
+<li><p>Set Builder Form</p></li>
+</ol>
+<div id="roster-form" class="section level3" number="3.3.1">
+<h3>
+<span class="header-section-number">3.3.1</span> Roster Form<a class="anchor" aria-label="anchor" href="#roster-form"><i class="fas fa-link"></i></a>
+</h3>
+<p>In roster form, all the elements of the set are listed, separated by commas and enclosed between curly braces { }. For example, the elements of the set <span class="math inline">\(V\)</span> of all vowels in the English alphabet can be represented as <span class="math inline">\(V=\{a,e,i,o,u\}\)</span>.</p>
+<p>Sometimes, it is not possible to list all the elements, but after knowing a few elements we can see as to what the other elements are. For example, the set of natural numbers may be written as: <span class="math inline">\(N=\{1,2,3,\cdots ,\}\)</span>. Here the dots indicate that the set contains all the natural numbers. Similarly, the set of squares of positive odd integers is written as: <span class="math inline">\(S=\{1,9,25,\cdots ,\}\)</span>.</p>
+<div class="example">
+<p><span id="exm:ex2" class="example"><strong>Example 3.2  (Leap year set) </strong></span>If set represents all the leap years (the years that can be devided by 4) between the year 1995 and 2015, then it would be described using Roster form as:</p>
+<p><span class="math inline">\(A =\{1996,2000,2004,2008,2012\}\)</span>.</p>
+<p>Now, the elements inside the braces are written in ascending order. This could be descending order or any random order. As discussed before, the order doesn’t matter for a set represented in the Roster Form.</p>
+</div>
+</div>
+<div id="set-builder-form" class="section level3" number="3.3.2">
+<h3>
+<span class="header-section-number">3.3.2</span> Set Builder Form<a class="anchor" aria-label="anchor" href="#set-builder-form"><i class="fas fa-link"></i></a>
+</h3>
+<p>This method is also known as <em>set section</em> or <em>property rule</em>. In set builder form, all the elements have a common property. This property is not applicable to the objects that do not belong to the set. In this method the elements of the set are represented by mentioning their qualitative or quantitative or both characteristics.</p>
+<p>To understand this method, let us consider the sets:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(A=\{2,4,6,8,\cdots ,\}\)</span></p></li>
+<li><p><span class="math inline">\(B=\{a,e,i,o,u\}\)</span></p></li>
+</ol>
+<p>If we try to search out some property among the elements of sets, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, we find that all elements of set <span class="math inline">\(A\)</span> are even integers; all elements of set <span class="math inline">\(B\)</span> are the vowels of engish alphabet. Thus, we can use the letter ‘x’ to represent an arbitrary element of the set together with the property of ‘x’. Therefore sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> may be written as:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(A=\{2,4,6,8,\cdots,\}=\{x:x~ \text{is an even positive integer}\}\)</span></p></li>
+<li><p><span class="math inline">\(B=\{a,e,i,o,u\}=\{x: x~ \text{is a vowel in english alphabet}\}\)</span></p></li>
+</ol>
+<p>where the symbol <code>:</code> stands for <em>such that</em>.</p>
+<div class="example">
+<p><span id="exm:ex3" class="example"><strong>Example 3.3  (Prime number set) </strong></span>If set <span class="math inline">\(S\)</span> has all the elements which are even prime numbers, it is represented as:</p>
+<p><span class="math inline">\(S=\{ x: x~\text{ is an even prime number}\}\)</span></p>
+</div>
+</div>
+</div>
+<div id="types-of-sets" class="section level2" number="3.4">
+<h2>
+<span class="header-section-number">3.4</span> Types of sets<a class="anchor" aria-label="anchor" href="#types-of-sets"><i class="fas fa-link"></i></a>
+</h2>
+<p>The sets are further categorized into different types, based on elements or types of elements. These different types of sets in basic set theory are:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Finite set:</strong> A set is said to be finite, if it contains finite number of distinct elements. Examples of finite set:</li>
+</ol>
+<ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(A=\{1,2,3,4,5\}\)</span></li>
+<li><span class="math inline">\(B=\{x:x~\text{is a river in india}\}\)</span></li>
+</ol>
+<ol start="2" style="list-style-type: decimal">
+<li>
+<strong>Infinite set:</strong> A set which contains infinite number of elements is known as infinite set. Examples:</li>
+</ol>
+<ul>
+<li><span class="math inline">\(N=\{1,2,3,4,\cdots, \}\)</span></li>
+<li>$</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>
+<strong>Empty set or null set:</strong> A set which contains no element is called an empty set or null set. This set is denoted by the Greek letter <span class="math inline">\(\phi\)</span>. For example,</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(\phi=\)</span> set of all those <span class="math inline">\(x\)</span> which are not equal to itself.</p></li>
+<li><p>Set of all integers whose square is 5.</p></li>
+</ol>
+<blockquote>
+<p><em>non-empty set:</em> A set which is not a null set is called non-empty set.</p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li>
+<strong>Singleton set:</strong> A set which contains only one element is called a singleton set. For example.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(A=\{x: 4&lt;x&lt;5, x~\text{is an integer}\}\)</span></p></li>
+<li><p><span class="math inline">\(N=\{5\}\)</span></p></li>
+<li><p>Set of all those negative integrers whose square is 9.</p></li>
+</ol>
+<ol start="5" style="list-style-type: decimal">
+<li>Equal set: Two sets are equal if they have same elements</li>
+<li>Equivalent set: Two sets are equivalent if they have same number of elements</li>
+<li>Power set: A set of every possible subset.</li>
+<li>Universal set: Any set that contains all the sets under consideration.</li>
+<li>Subset: When all the elements of set A belong to set B, then A is subset of B</li>
+</ol>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="intro.html"><span class="header-section-number">2</span> Introduction</a></div>
+<div class="next"><a href="methods.html"><span class="header-section-number">4</span> Methods</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#set-theory-operations"><span class="header-section-number">3</span> Set Theory &amp; Operations</a></li>
+<li><a class="nav-link" href="#introduction-of-set-theory"><span class="header-section-number">3.1</span> Introduction of set theory</a></li>
+<li><a class="nav-link" href="#definitions"><span class="header-section-number">3.2</span> Definitions</a></li>
+<li>
+<a class="nav-link" href="#representation-of-sets"><span class="header-section-number">3.3</span> Representation of Sets</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#roster-form"><span class="header-section-number">3.3.1</span> Roster Form</a></li>
+<li><a class="nav-link" href="#set-builder-form"><span class="header-section-number">3.3.2</span> Set Builder Form</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#types-of-sets"><span class="header-section-number">3.4</span> Types of sets</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Business Mathematics</strong>" was written by Siju Swamy. It was last built on 2023-08-27.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+# Introduction {#intro}
+
+## Introduction to Business Mathematics for MBA Students
+
+Welcome to the world of Business Mathematics! In the dynamic landscape of modern business, mathematical tools and techniques play a crucial role in decision-making, strategic planning, financial analysis, and overall management. This course is designed to equip MBA students like you with the foundational knowledge and skills needed to navigate the complex mathematical aspects of the business world.
+
+### Course Objectives:
+
+The primary objective of this course is to provide you with a solid foundation in various mathematical concepts and their practical applications in the business context. By the end of this course, you should be able to:
+
+>Quantitative Analysis: Apply mathematical tools to analyze quantitative data, allowing you to make informed business decisions based on numerical insights.
+
+>Financial Analysis: Understand and interpret financial data, perform financial calculations, and assess the financial health of organizations.
+
+>Optimization: Utilize mathematical techniques to optimize resource allocation, production processes, inventory management, and more, in order to enhance operational efficiency.
+
+>Time Value of Money: Grasp the fundamental concept of time value of money, including present and future value calculations, and their significance in financial decision-making.
+
+>Business Forecasting: Acquire skills to predict future trends and make informed projections by using mathematical models and statistical techniques.
+
+>Decision Making: Develop the ability to solve complex business problems using quantitative methods, aiding in effective decision-making and strategic planning.
+
+
+## Teaching Methodology:
+
+Throughout the course, a combination of lectures, real-world case studies, hands-on exercises, and interactive discussions will be employed to help you grasp both the theoretical concepts and practical applications of business mathematics. Collaborative learning and critical thinking will be encouraged, as you work individually and in groups to solve complex business problems.
+
+Remember, the knowledge gained from this course will serve as a valuable toolset in your MBA journey and beyond. So, let's embark on this mathematical exploration together, and discover how numbers can drive informed decisions and foster success in the world of business!
+
+
+
+
+
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
