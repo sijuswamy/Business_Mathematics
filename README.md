@@ -1,2 +1,2 @@
 # Business_Mathematics
-Recourse location for Business Mathematics Course 
+Resource location for Business Mathematics Course 
